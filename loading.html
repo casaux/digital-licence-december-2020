@@ -15,7 +15,10 @@
 
          $(document).ready(function() {
 
-            $(".casa-modal").css("height",$(document).height()+"px");
+           setInterval(function(){ location.href="wallet1.html" }, 3000);
+
+
+
          });
       </script>
       <style type="text/css">
@@ -24,7 +27,7 @@
 
          }
 
-         #loading{background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;z-index:99999;display:none;right:0;bottom:0}
+         #loading{background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;z-index:9999999999;display:block;right:0;bottom:0;}
          #loading p{font-size:1.3rem;line-height:1.5rem;padding:1rem !important;background:#5c5c5c;color:#fff;font-weight:bold;width:250px;display:block; border-radius: 5px;text-align:center;margin:300px auto auto auto !important;}
 
          #loading img{animation: rotation 2s infinite linear;}
@@ -43,6 +46,10 @@
    </head>
    <body class="live-demo au-body au-grid">
 
+     <div id="loading">
+     <p>Loading licence.<br /> Please wait...<br />
+       <img src="loader.png">
+     </div>
 
      <div class="casa-modal">
    		   <div class="casa-modal-inner">

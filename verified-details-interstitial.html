@@ -18,28 +18,9 @@
          $(document).ready(function() {
 
 
-           if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
-             $("#file-upload").on('change', function() {
-
-               location.href="verified-details-interstitial.html";
-               /*
-                $("#qr").css("display","block");
-                $("#name").val("Furzer");
-                $("#arn").val("1234567");
-           */
-             });
-           // some code..
-          } else {
-
-
-            $("#file-upload").click('change', function() {
-               location.href="verified-details-interstitial.html";
-           });
-
-          }
-
-
+            if(window.parent.window.location.hash=="#repl"){
+               $("a").attr("href","verified-details.html");
+            }
 
 
          });
@@ -127,7 +108,7 @@
 
                                       <br>
 
-                      <a href="verified-details.html" class="au-btn">Verify licence</a>
+                      <a href="verified-details-fcl.html" class="au-btn" id="verify-link">Verify licence</a>
 
 
 
